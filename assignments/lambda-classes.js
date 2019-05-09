@@ -50,7 +50,7 @@ class Student extends Person {
   }
 
   listsSubjects() {
-    return this.favSubjects.join("");
+    return this.favSubjects.join(", ");
   }
 
   PRAssignment(subject) {
@@ -191,7 +191,7 @@ console.log(Adam.grade(Ditto, Ditto.favSubjects[0]));
 console.log(Brian.demo(Brian.specialty));
 console.log(Carol);
 console.log(Ditto);
-console.log(Ditto.listsSubjects);
+console.log(Ditto.listsSubjects());
 console.log(Frank.PRAssignment("Vigilantes Are People Too"));
 console.log(
   Grace.sprintChallenge("Catching Bad Guys Won't Fill The Empty Hole Inside")
